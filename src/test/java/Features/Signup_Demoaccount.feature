@@ -1,6 +1,6 @@
 Feature: As an user I want to register a demo account
 
-  @test1
+  @test2
   Scenario Outline: Register a demo account
     Given I go to the Idloom page
     When I click on Signup button

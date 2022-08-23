@@ -1,6 +1,6 @@
 Feature: As an user I want to register a Freemium account
 
-  @test2
+  @test1
   Scenario Outline: Register a Freemium account
     Given I go to the Idloom page
     When I click on Signup button
@@ -23,6 +23,6 @@ Feature: As an user I want to register a Freemium account
 
     Examples:
     | firstName | lastName   | emailAddress        | Password    | confirmPassword | companyName | Phone   |
-    | An1       | Vo1        | mail1@mailinator.com| P@ssword123 | P@ssword123     | ancompany21  | 12345678|
+    | An1       | Vo1        | mail12@mailinator.com| P@ssword123 | P@ssword123     | ancompany30  | 12345678|
 
 

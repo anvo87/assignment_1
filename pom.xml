@@ -11,6 +11,14 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <browser>firefox</browser>
+        <appURL>https://www.example.com/webapp</appURL>
+        <threads>1</threads>
+        <remote>false</remote>
+        <seleniumGridURL/>
+        <platform/>
+        <browserVersion/>
     </properties>
 
 <!--    <dependencyManagement>-->
@@ -39,7 +47,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.0.0</version>
+            <version>4.3.0</version>
         </dependency>
 
 
@@ -75,7 +83,7 @@
     </dependencies>
 <!--    </dependencyManagement>-->
 
-           <build>
+    <build>
                <plugins>
                    <!-- Compiler plug-in -->
             <plugin>
