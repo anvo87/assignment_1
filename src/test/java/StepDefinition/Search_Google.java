@@ -19,7 +19,7 @@ import java.util.Locale;
 public class Search_Google extends BaseSetup{
 
     WebDriver driver;
-    String keyword;
+    //String keyword;
     public SearchGooglePage searchGooglePage;
     private static String propertiesFilePathRoot = "src/test/resources/Configs/configs.properties";
 
@@ -41,7 +41,7 @@ public class Search_Google extends BaseSetup{
     public void inputAKeyword(String keyword) throws InterruptedException{
         searchGooglePage = new SearchGooglePage(driver);
         Thread.sleep(6000);
-        this.keyword = keyword;
+        //this.keyword = keyword;
         searchGooglePage.inputKeyword(keyword);
     }
 
@@ -53,7 +53,7 @@ public class Search_Google extends BaseSetup{
 
     @Then("I verify the first result has {string}")
     public void iVerifyTheFirstResultHas(String keyword) {
-        this.keyword = keyword;
+        //this.keyword = keyword;
 
         String actualText = searchGooglePage.getFirstResult();
         String expectedText = keyword;

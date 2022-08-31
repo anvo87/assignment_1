@@ -1,7 +1,7 @@
 Feature: I want to calculate two numbers
 
   @test6
-  Scenario Outline: Add any two numbers
+  Scenario Outline: Calculate any two numbers
     When I go to Calculator page
     And I select first number "<number1>"
     And I select calculate "<calculate>"

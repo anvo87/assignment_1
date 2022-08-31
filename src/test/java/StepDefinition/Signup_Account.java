@@ -19,19 +19,19 @@ import Base.BaseSetup;
 public class Signup_Account extends BaseSetup {
     WebDriver driver;
     //String URL ="https://www.idloom.com/en/events/why-idloom-events?utm_source=GetApp";
-    String firstName;
-    String lastName;
-    String email;
-    String password;
-    String confirmPassword;
-    String companyName;
-    String phone;
-    String fullName;
-    String companyAddress;
-    String postCode;
-    String vat;
-    String referralCode;
-    String userName;
+//    String firstName;
+//    String lastName;
+//    String email;
+//    String password;
+//    String confirmPassword;
+//    String companyName;
+//    String phone;
+//    String fullName;
+//    String companyAddress;
+//    String postCode;
+//    String vat;
+//    String referralCode;
+//    String userName;
     public SignUpPage signUpPage;
     public LoginPage loginPage;
     private static String propertiesFilePathRoot = "src/test/resources/Configs/configs.properties";
@@ -65,7 +65,7 @@ public class Signup_Account extends BaseSetup {
           Thread.sleep(2000);
 //        WebDriverWait wait = new WebDriverWait(driver, 4);
 //        wait.until(ExpectedConditions.textToBePresentInElement(By.id("signUpPricing")));
-          this.firstName = firstName;
+          //this.firstName = firstName;
           //driver.findElement(By.id("inputFirstName")).sendKeys(firstName);
           signUpPage.inputFirstname(firstName);
 
@@ -73,7 +73,7 @@ public class Signup_Account extends BaseSetup {
     @And("I input Lastname {string}")
     public void iInputLastname(String lastName) {
 
-        this.lastName = lastName;
+        //this.lastName = lastName;
         //driver.findElement(By.id("inputLastName")).sendKeys(lastName);
         signUpPage.inputLastname(lastName);
 
@@ -82,35 +82,35 @@ public class Signup_Account extends BaseSetup {
 
     @And("I input Email address {string}")
     public void iInputEmailAddress(String email) {
-        this.email = email;
+        //this.email = email;
         //driver.findElement(By.id("inputEmailAddress")).sendKeys(Email);
         signUpPage.inputEmailAddress(email);
     }
 
     @And("I input Password {string}")
     public void iInputPassword(String password) {
-        this.password = password;
+        //this.password = password;
         //driver.findElement(By.id("inputPassword")).sendKeys(Password);
         signUpPage.inputPassword(password);
     }
 
     @And("I input Confirm password {string}")
     public void iInputConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
+        //this.confirmPassword = confirmPassword;
         //driver.findElement(By.id("inputConfirmPassword")).sendKeys(confirmPassword);
         signUpPage.inputConfirmPassword(confirmPassword);
     }
 
     @And("I input Company name {string}")
     public void iInputCompanyName(String companyName) {
-        this.companyName = companyName;
+        //this.companyName = companyName;
         //driver.findElement(By.id("inputCompanyName")).sendKeys(companyName);
         signUpPage.inputCompanyName(companyName);
     }
 
     @And("I input Phone {string}")
     public void iInputPhone(String phone) {
-        this.phone = phone;
+        //this.phone = phone;
         //driver.findElement(By.id("inputPhone")).sendKeys(Phone);
         signUpPage.inputPhone(phone);
     }
@@ -166,7 +166,7 @@ public class Signup_Account extends BaseSetup {
 
     @And("I input FullName {string}")
     public void iInputFullName(String fullName) {
-        this.fullName = fullName;
+        //this.fullName = fullName;
         //driver.findElement(By.id("inputFullName")).sendKeys(fullName);
         signUpPage.inputFullName(fullName);
     }
@@ -183,14 +183,14 @@ public class Signup_Account extends BaseSetup {
 
     @And("I input Company address {string}")
     public void iInputCompanyAddress(String companyAddress) {
-        this.companyAddress = companyAddress;
+        //this.companyAddress = companyAddress;
         //driver.findElement(By.xpath("//*[@id=\"divAddress\"]/div[1]/div/div/div/textarea")).sendKeys(companyAddress);
         signUpPage.inputCompanyAddress(companyAddress);
     }
 
     @And("I input Postcode {string}")
     public void iInputPostcode(String postCode) {
-        this.postCode= postCode;
+        //this.postCode= postCode;
         //driver.findElement(By.xpath("//*[@id=\"divAddress\"]/div[2]/div/div[1]/div/input")).sendKeys(postCode);
         signUpPage.inputPostcode(postCode);
 
@@ -198,14 +198,14 @@ public class Signup_Account extends BaseSetup {
 
     @And("I input VAT {string}")
     public void iInputVAT(String vat) {
-        this.vat = vat;
+        //this.vat = vat;
         //driver.findElement(By.id("inputVATnr")).sendKeys(Vat);
         signUpPage.inputVAT(vat);
     }
 
     @And("I input Referral Code {string}")
     public void iInputReferralCode(String referralCode) {
-        this.referralCode = referralCode;
+        //this.referralCode = referralCode;
         //driver.findElement(By.id("inputReferral")).sendKeys(referralCode);
         signUpPage.inputReferralCode(referralCode);
     }
@@ -230,13 +230,13 @@ public class Signup_Account extends BaseSetup {
     @And("I input Username {string}")
     public void iInputUsername(String emailAddress) throws  InterruptedException {
         Thread.sleep(2000);
-        this.userName = emailAddress;
+        //this.userName = emailAddress;
         loginPage.inputUsername(emailAddress);
     }
 
     @And("I input Password for Login page {string}")
     public void iInputPasswordForLoginPage(String password) {
-        this.password = password;
+        //this.password = password;
         loginPage.inputPasswordLogin(password);
     }
 
